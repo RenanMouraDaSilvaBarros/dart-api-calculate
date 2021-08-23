@@ -1,5 +1,5 @@
 class MathService {
-  static String caluculate(String op, String numberOne, String numberTwo) {
+  static String calculate(String op, String numberOne, String numberTwo) {
     switch (op) {
       case '+':
         return (double.parse(numberOne) + double.parse(numberTwo)).toString();
