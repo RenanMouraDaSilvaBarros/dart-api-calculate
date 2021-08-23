@@ -12,10 +12,7 @@ class MathController {
       return Response.ok(MathService.calculate('+', numberOne, numberTwo));
     });
 
-    router.post('/sun/<numberOne>/<numberTwo>',
-        (Request request, String numberOne, String numberTwo) {
-      return Response.ok(MathService.calculate('+', numberOne, numberTwo));
-    });
+  
     router.post('/sub/<numberOne>/<numberTwo>',
         (Request request, String numberOne, String numberTwo) {
       return Response.ok(MathService.calculate('-', numberOne, numberTwo));
