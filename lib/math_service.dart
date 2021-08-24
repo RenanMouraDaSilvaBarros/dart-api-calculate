@@ -1,15 +1,15 @@
 class MathService {
   static String sum(String numberOne, String numberTwo) =>
-      (double.parse(numberOne) - double.parse(numberTwo)).toString();
+      (double.parse(numberOne) + double.parse(numberTwo)).toString();
 
   static String subtract(String numberOne, String numberTwo) =>
       (double.parse(numberOne) - double.parse(numberTwo)).toString();
 
   static String multiply(String numberOne, String numberTwo) =>
-      (double.parse(numberOne) - double.parse(numberTwo)).toString();
+      (double.parse(numberOne) * double.parse(numberTwo)).toString();
 
   static String division(String numberOne, String numberTwo) {
-    if (double.parse(numberTwo) == 0) throw 'Cannot divide by zero';
+    if (double.parse(numberTwo) == 0) return 'Cannot divide by zero';
     return (double.parse(numberOne) / double.parse(numberTwo)).toString();
   }
 
